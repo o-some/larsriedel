@@ -65,6 +65,66 @@
     motionSections.forEach(section => sectionObserver.observe(section));
   }
 
+  const countElements = [...document.querySelectorAll('[data-count]')];
+  const formatCount = (element, value) => {
+    const decimals = Number.parseInt(element.dataset.countDecimals || '0', 10);
+    const suffix = element.dataset.countSuffix || '';
+    return `${new Intl.NumberFormat('de-DE', {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    }).format(value)}${suffix}`;
+  };
+
+  const finishCount = element => {
+    const target = Number.parseFloat(element.dataset.count || '0');
+    element.textContent = formatCount(element, target);
+    element.classList.remove('is-counting');
+    element.classList.add('is-counted');
+  };
+
+  const animateCount = element => {
+    if (element.classList.contains('is-counted')) return;
+    const target = Number.parseFloat(element.dataset.count || '0');
+    const duration = Number.parseInt(element.dataset.countDuration || '1300', 10);
+    const delay = Number.parseInt(element.dataset.countDelay || '0', 10);
+    const startAnimation = () => {
+      const startedAt = performance.now();
+      element.classList.add('is-counting');
+      const tick = now => {
+        const progress = clamp((now - startedAt) / duration, 0, 1);
+        const eased = 1 - Math.pow(1 - progress, 4);
+        element.textContent = formatCount(element, target * eased);
+        if (progress < 1) {
+          window.requestAnimationFrame(tick);
+        } else {
+          finishCount(element);
+        }
+      };
+      window.requestAnimationFrame(tick);
+    };
+    if (delay > 0) window.setTimeout(startAnimation, delay);
+    else startAnimation();
+  };
+
+  countElements.forEach(element => {
+    const target = Number.parseFloat(element.dataset.count || '0');
+    element.setAttribute('aria-label', formatCount(element, target));
+  });
+
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    countElements.forEach(finishCount);
+  } else {
+    countElements.forEach(element => { element.textContent = formatCount(element, 0); });
+    const countObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        animateCount(entry.target);
+        countObserver.unobserve(entry.target);
+      });
+    }, { threshold: .38, rootMargin: '0px 0px -6% 0px' });
+    countElements.forEach(element => countObserver.observe(element));
+  }
+
   const parallaxItems = [...document.querySelectorAll('[data-parallax]')];
   const scrollScenes = [...document.querySelectorAll('[data-scroll-scene]')];
   const orbitScenes = [...document.querySelectorAll('[data-parallax-root], .atlanta')];

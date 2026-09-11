@@ -8,6 +8,7 @@ narrative_motion:
   - mobile_section_sweep
   - mobile_bounded_depth
   - grouped_reveal_stagger
+  - viewport_triggered_count_up
 scroll_hijacking: forbidden
 maximum_simultaneous_reveals: 6
 default_tech: css_and_intersection_observer
@@ -15,4 +16,7 @@ target_fps: 60
 reduced_motion: show_final_state_disable_continuous_orbit
 mobile_downgrade: cap_depth_to_28px_use_transform_opacity_and_keep_native_scroll
 mobile_effect_cap: one_section_sweep_plus_one_depth_layer_plus_visible_reveal_group
+counter_duration_ms: 1150_to_1450
+counter_replay: once
+counter_reduced_motion: immediate_exact_final_value
 rendered_video: off

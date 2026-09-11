@@ -46,3 +46,13 @@
 | Native scrolling | PASS | No scroll interception; passive listeners and requestAnimationFrame retained |
 | Mobile performance budget | PASS | Transform/opacity-first motion, image depth capped at 28 px and offscreen calculations skipped |
 | Reduced motion | CODE REVIEW PASS | Reveals settle immediately, parallax is removed and section sweeps show a static final line |
+
+## Candidate 1.3.0 — Performance Counters
+
+| Check | State | Evidence |
+|---|---|---|
+| CAF continuation | PASS | CAF 1.17.0 existing-project route; rollback branch `feat/count-up-stats` |
+| Counter scope | PASS | Hero proof, Atlanta result series, world-title count and achievement totals covered; dates and prose remain static |
+| Counter timing | PASS | Per-element duration bounded to 1.15–1.45 seconds with gentle grouped delays |
+| Exact final values | PASS | German decimal formatting and suffixes resolve to the original displayed values |
+| Accessibility | CODE REVIEW PASS | Final value retained as accessible label; reduced-motion and no-observer paths render the exact final value immediately |
