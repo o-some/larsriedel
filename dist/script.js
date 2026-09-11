@@ -3,6 +3,9 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const touchMotion = window.matchMedia('(pointer: coarse)').matches && !reducedMotion;
+
+  document.documentElement.classList.toggle('touch-motion', touchMotion);
 
   const closeNav = () => {
     document.body.classList.remove('nav-open');
@@ -23,6 +26,17 @@
   setHeader();
   window.addEventListener('scroll', setHeader, { passive: true });
 
+  document.querySelectorAll('.format-list, .medal-grid, .media-items, .accordions').forEach(group => {
+    [...group.children].forEach((item, index) => {
+      if (!item.matches('.reveal, .image-reveal')) return;
+      item.classList.add('motion-step');
+      item.style.setProperty('--reveal-order', String(Math.min(index, 5)));
+    });
+  });
+
+  const motionSections = [...document.querySelectorAll('.intro, .formats, .achievements, .media, .fit, .faq, .contact')];
+  motionSections.forEach(section => section.classList.add('motion-section'));
+
   const reveals = [...new Set(document.querySelectorAll('.reveal, .image-reveal'))];
   if (reducedMotion || !('IntersectionObserver' in window)) {
     reveals.forEach(item => item.classList.add('is-visible'));
@@ -36,6 +50,19 @@
       });
     }, { threshold: .12, rootMargin: '0px 0px -5% 0px' });
     reveals.forEach(item => revealObserver.observe(item));
+  }
+
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    motionSections.forEach(section => section.classList.add('is-scene-active'));
+  } else {
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-scene-active');
+        sectionObserver.unobserve(entry.target);
+      });
+    }, { threshold: .08, rootMargin: '0px 0px -12% 0px' });
+    motionSections.forEach(section => sectionObserver.observe(section));
   }
 
   const parallaxItems = [...document.querySelectorAll('[data-parallax]')];
@@ -58,12 +85,15 @@
       });
     }
 
-    if (!reducedMotion && window.innerWidth > 760) {
+    if (!reducedMotion) {
       parallaxItems.forEach(item => {
         const rect = item.getBoundingClientRect();
-        const strength = Number.parseFloat(item.dataset.parallax || '0');
+        if (rect.bottom < -viewport * .2 || rect.top > viewport * 1.2) return;
+        const authoredStrength = Number.parseFloat(item.dataset.parallax || '0');
+        const strength = window.innerWidth <= 760 ? Math.min(authoredStrength, .035) : authoredStrength;
+        const limit = window.innerWidth <= 760 ? 28 : 82;
         const centerDelta = rect.top + rect.height / 2 - viewport / 2;
-        item.style.setProperty('--parallax-y', `${clamp(-centerDelta * strength, -82, 82).toFixed(1)}px`);
+        item.style.setProperty('--parallax-y', `${clamp(-centerDelta * strength, -limit, limit).toFixed(1)}px`);
       });
     }
 
@@ -82,6 +112,14 @@
         const rect = scene.getBoundingClientRect();
         const progress = clamp((viewport - rect.top) / (viewport + rect.height), 0, 1);
         scene.style.setProperty('--orbit-rotation', `${Math.round(progress * 120)}deg`);
+      });
+
+      motionSections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.bottom < -viewport * .2 || rect.top > viewport * 1.2) return;
+        const progress = clamp((viewport - rect.top) / (viewport + rect.height), 0, 1);
+        section.style.setProperty('--section-progress', progress.toFixed(3));
+        section.style.setProperty('--section-drift', `${((progress - .5) * 16).toFixed(1)}px`);
       });
     }
   };

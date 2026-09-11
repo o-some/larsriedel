@@ -36,3 +36,13 @@
 | Reduced motion | CODE REVIEW PASS | Final visual state, disabled parallax and completed trajectory encoded under `prefers-reduced-motion` |
 | Browser runtime | PASS | No page-origin runtime errors; browser-extension metadata noise excluded |
 | Production release | PASS | Successfully published owner-private at `https://lars-riedel-speaker.o-some.chatgpt.site` |
+
+## Candidate 1.2.0 — Mobile Motion Polish
+
+| Check | State | Evidence |
+|---|---|---|
+| CAF continuation | PASS | CAF 1.17.0 existing-project route; rollback branch `feat/mobile-motion-polish` from `0af69d0` |
+| Motion scope | PASS | Existing visual system preserved; only section transitions, reveal timing, touch feedback and bounded image depth changed |
+| Native scrolling | PASS | No scroll interception; passive listeners and requestAnimationFrame retained |
+| Mobile performance budget | PASS | Transform/opacity-first motion, image depth capped at 28 px and offscreen calculations skipped |
+| Reduced motion | CODE REVIEW PASS | Reveals settle immediately, parallax is removed and section sweeps show a static final line |
