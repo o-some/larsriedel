@@ -35,4 +35,4 @@
 | Funnel interaction | PASS | Business-Talk CTA navigated to `#anfrage` and selected `Business-Talk` in the format field |
 | Reduced motion | CODE REVIEW PASS | Final visual state, disabled parallax and completed trajectory encoded under `prefers-reduced-motion` |
 | Browser runtime | PASS | No page-origin runtime errors; browser-extension metadata noise excluded |
-| Production release | PASS | Version 2 successfully published owner-private at `https://lars-riedel-speaker.o-some.chatgpt.site` |
+| Production release | PASS | Successfully published owner-private at `https://lars-riedel-speaker.o-some.chatgpt.site` |

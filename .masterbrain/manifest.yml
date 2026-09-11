@@ -12,7 +12,6 @@ bigbrain_version: 1.1.0
 active_release_target: sites_private_preview
 current_release:
   version: 1.1.0
-  sites_version: 2
   url: https://lars-riedel-speaker.o-some.chatgpt.site
   deployed: true
 created_at: 2026-09-11

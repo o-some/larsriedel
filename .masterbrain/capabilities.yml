@@ -13,7 +13,6 @@ hosting:
   provider: sites
   status: PROVEN_WRITE
   current_release_version: 1.1.0
-  sites_version: 2
   deployed: true
 github_backup:
   status: PROVEN_WRITE
