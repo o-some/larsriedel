@@ -133,8 +133,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .attempts > span { min-width:112px; padding:13px 16px; border:1px solid var(--line); font-family:var(--display); font-size:1.16rem; text-align:center; color:var(--muted); background:rgba(9,9,8,.55); }
 .attempts .foul { text-decoration:line-through; color:#77736b; }
 .attempts .winner { color:var(--ink); background:var(--gold-light); border-color:var(--gold-light); }
-.attempts b { font-size:.56rem; vertical-align:top; margin-left:3px; }
-.count-value,[data-count] { font-variant-numeric:tabular-nums lining-nums; }
+.attempts .winner::after { content:"OR"; margin-left:7px; font-family:var(--body); font-size:.56rem; font-weight:900; vertical-align:top; }
+[data-count] { font-variant-numeric:tabular-nums lining-nums; }
 [data-count] { transition:text-shadow .45s ease,color .45s ease; }
 [data-count].is-counting { text-shadow:0 0 22px rgba(215,180,106,.22); }
 .atlanta-copy { max-width:620px; margin:32px 0 0; color:var(--muted); font-size:1.1rem; }
@@ -375,6 +375,7 @@ input:focus,select:focus,textarea:focus { border-color:#71551f; }
   .parallax-media img { transform:none!important; will-change:auto; }
   .motion-section .section-index { transform:none!important; will-change:auto!important; }
   .motion-section::after { transform:scaleX(1)!important; opacity:.45!important; animation:none!important; }
+  [data-count].is-counting { text-shadow:none; }
   .throw-line path { stroke-dashoffset:0!important; }
   .travelling-disc { left:84%!important; top:18%!important; transform:translate(-50%,-50%) rotate(0)!important; }
 }

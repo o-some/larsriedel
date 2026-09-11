@@ -18,5 +18,5 @@ mobile_downgrade: cap_depth_to_28px_use_transform_opacity_and_keep_native_scroll
 mobile_effect_cap: one_section_sweep_plus_one_depth_layer_plus_visible_reveal_group
 counter_duration_ms: 1150_to_1450
 counter_replay: once
-counter_reduced_motion: immediate_exact_final_value
+counter_reduced_motion: simplified_480ms_count_without_glow_or_delay
 rendered_video: off

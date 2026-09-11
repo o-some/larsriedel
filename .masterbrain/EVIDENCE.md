@@ -55,4 +55,5 @@
 | Counter scope | PASS | Hero proof, Atlanta result series, world-title count and achievement totals covered; dates and prose remain static |
 | Counter timing | PASS | Per-element duration bounded to 1.15–1.45 seconds with gentle grouped delays |
 | Exact final values | PASS | German decimal formatting and suffixes resolve to the original displayed values |
-| Accessibility | CODE REVIEW PASS | Final value retained as accessible label; reduced-motion and no-observer paths render the exact final value immediately |
+| Accessibility | CODE REVIEW PASS | Final value retained as accessible label; reduced-motion uses a simplified 480 ms count without glow or delay; no-observer path renders the exact final value immediately |
+| iOS cache consistency repair | PASS | Atlanta values returned to single-level markup and versioned CSS/JavaScript URLs prevent mixed old/new assets |

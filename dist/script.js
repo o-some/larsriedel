@@ -85,8 +85,8 @@
   const animateCount = element => {
     if (element.classList.contains('is-counted')) return;
     const target = Number.parseFloat(element.dataset.count || '0');
-    const duration = Number.parseInt(element.dataset.countDuration || '1300', 10);
-    const delay = Number.parseInt(element.dataset.countDelay || '0', 10);
+    const duration = reducedMotion ? 480 : Number.parseInt(element.dataset.countDuration || '1300', 10);
+    const delay = reducedMotion ? 0 : Number.parseInt(element.dataset.countDelay || '0', 10);
     const startAnimation = () => {
       const startedAt = performance.now();
       element.classList.add('is-counting');
@@ -111,7 +111,7 @@
     element.setAttribute('aria-label', formatCount(element, target));
   });
 
-  if (reducedMotion || !('IntersectionObserver' in window)) {
+  if (!('IntersectionObserver' in window)) {
     countElements.forEach(finishCount);
   } else {
     countElements.forEach(element => { element.textContent = formatCount(element, 0); });
