@@ -1,0 +1,23 @@
+bigbrain_version: 1.1.0
+snapshot_date: 2026-09-11
+scope: lars-riedel-premium-website
+packs:
+  design-ui: 1.1.0
+  engineering-delivery: 1.2.0
+active_rules:
+  - BB-DES-001
+  - BB-DES-002
+  - BB-DES-003
+  - BB-DES-005
+  - BB-DES-006
+  - BB-DES-007
+  - BB-DES-008
+  - BB-ENG-001
+  - BB-ENG-005
+  - BB-ENG-007
+  - BB-ENG-008
+  - BB-ENG-009
+  - BB-ENG-011
+  - BB-ENG-015
+  - BB-ENG-016
+  - BB-ENG-019

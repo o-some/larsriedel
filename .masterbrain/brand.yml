@@ -1,0 +1,30 @@
+version: 1.1.0-candidate
+status: proposed_until_lars_or_management_approval
+personality: [powerful, disciplined, grounded]
+anti_adjectives: [cheesy, gladiatorial, generic]
+visual_thesis: athletic_minimalism_with_spatial_depth
+palette:
+  carbon: '#090908'
+  graphite: '#171714'
+  antique_gold: '#d7b46a'
+  light_gold: '#f1d493'
+  paper: '#f1eee7'
+typography:
+  display: condensed_uppercase_system_stack
+  body: neutral_system_sans
+shape_language:
+  - discus_orbits
+  - diagonal_throw_trajectory
+  - monumental_columns_without_literal_costume
+motion:
+  - purposeful_reveals
+  - one_slow_ambient_orbit
+  - no_scroll_hijacking
+assets:
+  status: generated_preview_requires_identity_and_rights_approval
+  files:
+    - dist/assets/lars-riedel-hero-v1.webp
+    - dist/assets/lars-riedel-portrait-v1.webp
+    - dist/assets/discus-pedestal-v1.webp
+    - dist/assets/discus-velocity-v1.webp
+    - dist/assets/discus-sector-v1.webp

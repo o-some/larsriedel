@@ -1,0 +1,14 @@
+version: 1.1.0-candidate
+live_motion_tiers: [MICRO, SECTION, NARRATIVE]
+narrative_motion:
+  - ambient_disc_orbit
+  - discus_throw_trajectory
+  - bounded_background_parallax
+  - page_progress_indicator
+scroll_hijacking: forbidden
+maximum_simultaneous_reveals: 6
+default_tech: css_and_intersection_observer
+target_fps: 60
+reduced_motion: show_final_state_disable_continuous_orbit
+mobile_downgrade: disable_nonessential_depth_and_keep_native_scroll
+rendered_video: off

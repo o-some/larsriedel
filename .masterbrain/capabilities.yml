@@ -1,0 +1,22 @@
+version: 1.1.0-candidate
+website_runtime:
+  capability: static_html_css_javascript
+  provider: browser_native
+  status: PROVEN_READ
+contact_delivery:
+  capability: visitor_email_client_mailto
+  provider: browser_native
+  status: PROVEN_READ
+  destination: public_management_contact
+hosting:
+  capability: private_sites_preview
+  provider: sites
+  status: PROVEN_WRITE
+  current_release_version: 1.0.0
+  candidate_deployed: false
+github_backup:
+  status: PROVEN_WRITE
+analytics:
+  status: OFF
+third_party_tracking:
+  status: OFF

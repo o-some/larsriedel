@@ -1,0 +1,9 @@
+{
+  "name": "lars-riedel-premium-funnel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "check": "node --check dist/script.js"
+  }
+}

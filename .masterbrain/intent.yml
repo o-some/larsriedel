@@ -1,0 +1,22 @@
+goal: >
+  Eine sportliche Premium-Website für Lars Riedel als klaren Sales Funnel für
+  Keynotes, Business-Talks, Team-Events, Workshops, Incentives und Media bauen.
+must_do:
+  - dark_gold_spartan_inspired_art_direction
+  - verified_career_achievements
+  - clear_booking_journey
+  - responsive_mobile_and_desktop
+  - accessible_navigation_and_form
+  - reduced_motion_variant
+must_preserve:
+  - factual_accuracy
+  - respectful_public_figure_portrayal
+must_not_do:
+  - invent_testimonials_awards_clients_or_business_results
+  - publish_without_legal_and_image_approval
+  - add_unnecessary_backend_or_tracking
+primary_audience:
+  - event_agencies
+  - corporate_event_planners
+  - leadership_and_sales_teams
+primary_conversion: event_inquiry_email_to_verified_management

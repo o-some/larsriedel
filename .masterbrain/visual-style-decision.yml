@@ -1,0 +1,14 @@
+decision: confirmed_from_user_brief
+primary_aesthetic: Minimalism
+depth_system: Spatial UI
+brand_translation: dark_gold_spartan_inspired
+compatibility: compatible_with_sports_keynote_funnel
+risks:
+  - generated_likeness_requires_human_approval
+  - gold_on_black_contrast_must_be_checked
+  - spatial_effects_need_reduced_motion_fallback
+avoid:
+  - fantasy_armor
+  - excessive_glow
+  - generic_card_grid_everywhere
+  - tiny_luxury_typography
