@@ -1,6 +1,6 @@
 # Lars Riedel — Premium Sales Funnel Website
 
-Eigenständige statische Website für Lars Riedel. Der aktuelle Stand ist eine lokale, responsive Design- und Inhaltsversion und bewusst noch nicht zur öffentlichen Veröffentlichung freigegeben.
+Eigenständige statische Website für Lars Riedel. Der aktuelle Stand ist als private, responsive Site-Vorschau veröffentlicht und bewusst noch nicht für Suchmaschinen freigegeben.
 
 ## Inhalt
 
@@ -29,4 +29,4 @@ Eigenständige statische Website für Lars Riedel. Der aktuelle Stand ist eine l
 - IOC/Olympics, Atlanta 1996: https://olympics.com/en/olympic-games/atlanta-1996/results/athletics/discus-throw-men
 - Karriereübersicht: https://de.wikipedia.org/wiki/Lars_Riedel
 
-Die generierten Bilder sind Projekt-Visualisierungen. Masterdateien: `dist/assets/lars-riedel-hero-v1.png` und `dist/assets/lars-riedel-portrait-v1.png`; optimierte Web-Derivate liegen im selben Ordner.
+Die generierten Bilder sind Projekt-Visualisierungen. Die eingesetzten, optimierten WebP-Dateien liegen unter `dist/assets/`.
