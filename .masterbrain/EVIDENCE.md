@@ -57,3 +57,13 @@
 | Exact final values | PASS | German decimal formatting and suffixes resolve to the original displayed values |
 | Accessibility | CODE REVIEW PASS | Final value retained as accessible label; reduced-motion uses a simplified 480 ms count without glow or delay; no-observer path renders the exact final value immediately |
 | iOS cache consistency repair | PASS | Atlanta values returned to single-level markup and versioned CSS/JavaScript URLs prevent mixed old/new assets |
+
+## Candidate 1.4.0 — Mobile Navigation & Typography
+
+| Check | State | Evidence |
+|---|---|---|
+| CAF continuation | PASS | Existing visual system retained; repair limited to the reported mobile menu and type geometry |
+| Mobile menu surface | PASS | Menu uses an opaque full-viewport surface, safe-area padding, independent vertical scrolling and hides the fixed CTA while open |
+| Headline rhythm | PASS | Mobile display headings use a safer line-height and reduced negative tracking so umlauts cannot collide with the preceding line |
+| Long labels | PASS | Event-fit rows use responsive sizing, wrap-safe spacing and relaxed line-height |
+| Cache consistency | PASS | HTML references an atomic `20260911-2155` CSS/JavaScript asset version |
