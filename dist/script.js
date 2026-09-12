@@ -34,7 +34,7 @@
     });
   });
 
-  const motionSections = [...document.querySelectorAll('.intro, .formats, .achievements, .media, .fit, .faq, .contact')];
+  const motionSections = [...document.querySelectorAll('.intro, .formats, .achievements, .media, .fit, .faq, .impact-break, .contact')];
   motionSections.forEach(section => section.classList.add('motion-section'));
 
   const reveals = [...new Set(document.querySelectorAll('.reveal, .image-reveal'))];

@@ -22,4 +22,16 @@ Finaler Prompt: Extreme Nahaufnahme eines Wettkampf-Diskus im Flug; feine Goldpa
 
 Finaler Prompt: Leicht erhöhte Ansicht eines leeren Diskuswurfrings mit Sektorlinien bei Nacht; ein einzelner Diskus liegt jenseits eines goldenen Messbogens; schwarze mineralische Oberfläche, zurückhaltende monumentale Säulengeometrie, antikgoldene Lichtakzente; keine Menschen, keine Zuschauer, keine Schrift, keine Logos und keine olympischen Ringe.
 
+## Griff am Diskus
+
+Finaler Prompt: Extreme Nahaufnahme einer kraftvollen, mit Magnesium bestäubten Hand am bronzenen und graphitfarbenen Rand eines Wettkampf-Diskus; nur Unterarm, Hand und Diskus; schwarzer Studiohintergrund mit freiem Negativraum; warmes goldenes Kantenlicht, realistische Anatomie und Materialstruktur, keine Schrift, Logos oder olympischen Ringe.
+
+## Diskus im Steinraum
+
+Finaler Prompt: Einzelner schwarz-goldener Wettkampf-Diskus in einem monumentalen dunklen Steinkorridor mit zurückhaltend spartanischer Architektur; zentrierte tiefe Perspektive, warmer goldener Lichtstrahl und atmosphärischer Staub; fotorealistisch, ruhig und monumental, ohne Menschen, Schrift, Logos oder olympische Ringe.
+
+## Einschlag im Wurfsektor
+
+Finaler Prompt: Ein Wettkampf-Diskus trifft im dunklen Stadion auf nasse schwarze Erde; eleganter Ausbruch aus realistischen Erdpartikeln und goldbeleuchteten Tropfen; dynamische Diagonale, tiefe Schwarztöne und freie dunkle Overlay-Fläche; keine Menschen, Schrift, Logos, Flammen oder olympischen Ringe.
+
 Die Motive sind gestalterische Visualisierungen und keine verifizierten Originalfotos. Für den Livegang ist die Freigabe der dargestellten Person beziehungsweise ein Austausch gegen rechtegeklärtes Originalmaterial erforderlich.

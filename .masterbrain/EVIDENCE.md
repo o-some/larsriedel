@@ -67,3 +67,14 @@
 | Headline rhythm | PASS | Mobile display headings use a safer line-height and reduced negative tracking so umlauts cannot collide with the preceding line |
 | Long labels | PASS | Event-fit rows use responsive sizing, wrap-safe spacing and relaxed line-height |
 | Cache consistency | PASS | HTML references an atomic `20260911-2155` CSS/JavaScript asset version |
+
+## Candidate 1.5.0 — Cinematic Image Chapters
+
+| Check | State | Evidence |
+|---|---|---|
+| CAF continuation | PASS | Accepted black-and-gold visual system extended without changing the established funnel structure |
+| Generated imagery | PASS | Three original person-free editorial motifs generated and visually inspected: grip, monumental discus and impact |
+| Responsive delivery | PASS | Six optimized WebP assets supplied at 1672×941 and 900×507; each full asset remains below 135 KB |
+| Narrative placement | PASS | Two asymmetric editorial frames bridge achievements and personal story; the impact scene strengthens the final conversion handoff |
+| Accessibility | PASS | Meaningful German alternative text supplied; overlays retain dedicated dark gradients |
+| Cache consistency | PASS | HTML references atomic `20260912-0635` CSS/JavaScript asset URLs |
