@@ -228,9 +228,9 @@ summary::after { transform:rotate(90deg); }
 details[open] summary::after { transform:rotate(0); }
 details p { color:var(--muted); max-width:680px; margin:0; padding:0 50px 28px 0; }
 
-.impact-break { min-height:760px; position:relative; display:grid; align-items:center; overflow:hidden; isolation:isolate; border-top:1px solid var(--line); background:#080807; }
+.impact-break { min-height:760px; position:relative; display:grid; align-items:center; overflow:hidden; isolation:isolate; border-top:1px solid var(--line); background-color:#080807; background-image:radial-gradient(circle at 66% 48%,rgba(151,112,43,.1),transparent 42%),url("assets/discus-impact-v1.webp"); background-repeat:no-repeat; background-position:center,right center; background-size:auto,auto 112%; }
 .impact-media,.impact-shade { position:absolute; inset:0; }
-.impact-media { z-index:0; overflow:hidden; background-image:radial-gradient(circle at 66% 48%,rgba(151,112,43,.1),transparent 42%),url("assets/discus-impact-v1.webp"); background-color:#080807; background-repeat:no-repeat; background-position:center,right center; background-size:auto,auto 112%; }
+.impact-media { z-index:0; overflow:hidden; }
 .impact-media img { opacity:0; }
 .impact-media.parallax-media img { transform:translate3d(0,var(--parallax-y,0px),0); will-change:transform; }
 .impact-shade { z-index:1; background:linear-gradient(90deg,#070706 0%,rgba(7,7,6,.98) 30%,rgba(7,7,6,.76) 43%,rgba(7,7,6,.18) 63%,rgba(7,7,6,.03) 82%),linear-gradient(0deg,rgba(7,7,6,.56),transparent 50%); }
@@ -377,7 +377,7 @@ input:focus,select:focus,textarea:focus { border-color:#71551f; }
   .fit-list li { min-width:0; min-height:70px; padding-block:19px; align-items:flex-start; gap:18px; font-size:clamp(1.12rem,5.2vw,1.45rem); line-height:1.12; overflow-wrap:break-word; hyphens:auto; }
   .fit-list span { flex:0 0 36px; padding-top:.14em; }
   .format-feature h3,.format-row h3,.media-item h3,summary { line-height:1.08; letter-spacing:-.02em; }
-  .impact-break { min-height:680px; align-items:end; padding-bottom:78px; }
+  .impact-break { min-height:680px; align-items:end; padding-bottom:78px; background:#080807; }
   .impact-media { inset:0 0 auto; height:54%; overflow:hidden; background:#080807; }
   .impact-media.parallax-media img { width:100%; height:100%; max-width:100%; object-fit:cover; object-position:88% 58%; opacity:1; transform:none; transform-origin:center center; }
   .impact-shade { inset:0; background:linear-gradient(0deg,#070706 0%,rgba(7,7,6,.99) 35%,rgba(7,7,6,.9) 49%,rgba(7,7,6,.25) 66%,rgba(7,7,6,.08) 100%),linear-gradient(90deg,rgba(7,7,6,.24),transparent 52%); }
