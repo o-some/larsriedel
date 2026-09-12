@@ -325,8 +325,9 @@ input:focus,select:focus,textarea:focus { border-color:#71551f; }
   .intro-grid { gap:50px; }
   .section-head { gap:38px; margin-bottom:48px; }
   .format-feature { grid-template-columns:1fr auto; gap:24px; padding:28px; min-height:520px; align-content:end; }
-  .format-feature-media img { object-position:70% center; }
-  .format-feature-shade { background:linear-gradient(0deg,rgba(8,8,7,.99) 0%,rgba(8,8,7,.92) 49%,rgba(8,8,7,.15) 100%); }
+  .format-feature-media { transform:none!important; }
+  .format-feature-media img { object-position:54% 38%; filter:contrast(1.04) saturate(.94); }
+  .format-feature-shade { background:linear-gradient(0deg,rgba(8,8,7,.99) 0%,rgba(8,8,7,.94) 45%,rgba(8,8,7,.22) 72%,rgba(8,8,7,.06) 100%); }
   .format-feature .format-no { position:absolute; right:16px; top:10px; opacity:.55; }
   .format-feature > div:nth-of-type(3) { grid-column:1/-1; padding-top:150px; }
   .format-feature .circle-link { grid-column:2; }
